@@ -1,6 +1,14 @@
+'use client'
 import Link from 'next/link';
+import { useState } from 'react';
+import { CiSearch } from 'react-icons/ci';
 
 const Header = () => {
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  const toggleSearch = () => {
+    setIsSearchOpen(!isSearchOpen);
+  };
   return (
     <header className="sticky top-0 bg-white py-4 w-full">
       <div className="w-full">
@@ -35,11 +43,29 @@ const Header = () => {
             </li>
             <li className=''>
               <Link legacyBehavior href="/signup">
-                <a className="text-black hover:text-gray-300 mr-8">Sign Up</a>
+                <a className="text-black hover:text-gray-300">Sign Up</a>
               </Link>
+            </li>
+            <li>
+              <button
+                aria-label="search"
+                onClick={toggleSearch}
+                className="text-black hover:text-gray-300 focus:outline-none mr-12"
+              >
+                <CiSearch />
+              </button>
+              {isSearchOpen && (
+          <input
+              type="text"
+              placeholder="Search"
+              className="border border-gray-300 px-3 py-1 rounded-md focus:outline-none mr-4"
+            />
+         
+        )}
             </li>
           </ul>
         </nav>
+        
       </div>
     </header>
   );
