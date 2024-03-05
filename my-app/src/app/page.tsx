@@ -6,8 +6,8 @@ import ThirdSection from "@/components/ThirdSection"
 import FourthSection from "@/components/FourthSection"
 import FifthSection from "@/components/FifthSection"
 import SixthSection from "@/components/SixthSection"
-import AboutUs from "@/components/AboutUs"
-
+import AboutUs from "@/app/aboutus/page"
+import Test from "@/components/Test"
 import SeventhSection from "@/components/SeventhSection";
 export default function Home() {
   return (
@@ -19,8 +19,6 @@ export default function Home() {
       <FourthSection />
       <FifthSection />
       <SixthSection />
-      <AboutUs />
-      
       <SeventhSection />
       <Footer />
     </main>

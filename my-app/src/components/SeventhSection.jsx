@@ -3,8 +3,8 @@ import { useState } from "react";
 
 const SeventhSection = () => {
     const houseImages = [
-        'house1.jpeg',
-        'house2.jpeg',
+        'house1.jpg',
+        'house2.jpg',
         'house3.jpeg',
         'house4.jpeg',
         'house5.jpeg',

@@ -3,8 +3,8 @@ import { useState } from "react";
 
 const FifthSection = () => {
     const houseImages = [
-        'house1.jpeg',
-        'house2.jpeg',
+        'house1.jpg',
+        'house2.jpg',
         'house3.jpeg',
         'house4.jpeg',
         'house5.jpeg',
@@ -45,7 +45,7 @@ const FifthSection = () => {
 
                     <div className="w-full md:w-1/2 flex flex-wrap justify-around">
                         {houseImages.slice(startIndex, endIndex).map((image, index) => (
-                            <div key={startIndex + index} className="w-1/3 mb-14 mx-2">
+                            <div key={startIndex + index} className="w-1/3 mb-10 mx-2">
                                 <img
                                     src={image}
                                     alt={`House ${startIndex + index + 1}`}

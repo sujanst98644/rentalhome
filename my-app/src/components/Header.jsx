@@ -16,23 +16,23 @@ const Header = () => {
           <ul className="flex justify-start space-x-6 lg:space-x-12">
             <li className="mr-6">
               <Link legacyBehavior href="/">
-                <a className="text-black hover:text-gray-300 ml-8">Home</a>
+                <a href='/' className="text-black hover:text-gray-300 ml-8">Home</a>
               </Link>
             </li>
           </ul>
           <ul className="flex justify-end space-x-6 lg:space-x-12">
             <li className="mr-6">
-              <Link legacyBehavior href="/rooms">
-                <a className="text-black hover:text-gray-300">Find Rooms</a>
+              <Link legacyBehavior href="/newsignup">
+                <a className="text-black hover:text-gray-300">Schedule Appointment</a>
               </Link>
             </li>
             <li className="mr-6">
-              <Link legacyBehavior href="/add-room">
+              <Link legacyBehavior href="/newsignup">
                 <a className="text-black hover:text-gray-300">Rent Rooms</a>
               </Link>
             </li>
             <li>
-              <Link legacyBehavior href="/about">
+              <Link legacyBehavior href="/aboutus">
                 <a className="text-black hover:text-gray-300">About</a>
               </Link>
             </li>
@@ -42,7 +42,7 @@ const Header = () => {
               </Link>
             </li>
             <li className=''>
-              <Link legacyBehavior href="/signup">
+              <Link legacyBehavior href="/newsignup">
                 <a className="text-black hover:text-gray-300">Sign Up</a>
               </Link>
             </li>
